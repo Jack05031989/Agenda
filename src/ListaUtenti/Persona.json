@@ -1,0 +1,39 @@
+{
+  "Persona": [
+    {
+      "id": 1,
+      "nome": "Fabio",
+      "cognome": "Rossi",
+      "eta": "32",
+      "cell": 32145677
+    },
+    {
+      "nome": "Jacopo",
+      "cognome": "Bramani",
+      "eta": "20",
+      "cell": "34214698",
+      "id": 2
+    },
+    {
+      "nome": "Marco",
+      "cognome": "Rossi",
+      "eta": "22",
+      "cell": "345216790",
+      "id": 3
+    },
+    {
+      "nome": "Stefania",
+      "cognome": "Bianchi",
+      "eta": "20",
+      "cell": "2333234",
+      "id": 4
+    },
+    {
+      "nome": "Alessia",
+      "cognome": "Fissi",
+      "eta": "14",
+      "cell": "34215678",
+      "id": 5
+    }
+  ]
+}

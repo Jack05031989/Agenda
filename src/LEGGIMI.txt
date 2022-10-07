@@ -1,0 +1,7 @@
+Come avviare il progetto:
+1 - andare nella cartella src\ListaUtenti e avviare il cmd 
+2 - dal terminale avviare il comando json-server --watch persona.json 
+3 - tornare nella cartella del progetto avviare il cmd 
+4 - dal terminale avviare il comando ng serve 
+5 - avviare un browser a scelta nostra 
+6 - digitare nella barra degli indirizzi http://localhost:4200 
