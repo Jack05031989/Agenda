@@ -1,0 +1,24 @@
+<form #myForm="ngForm">
+
+<div class="col">
+
+  <div class="col">
+      <input type="text" #nome="ngModel" [(ngModel)]="persona.nome" name="nome" required [ngStyle]="{'border':nome.valid?'1px solid blue':'1px solid red'}" value="persona.nome" class="form-control" placeholder="Nome">
+  </div>
+  <div class="col">
+      <input type="text" #cognome="ngModel" [(ngModel)]="persona.cognome" name="cognome" required [ngStyle]="{'border':cognome.valid?'1px solid blue':'1px solid red'}" value="persona.cognome" class="form-control" placeholder="Cognome">
+  </div>
+
+<div class="col">
+      <input type="text" #eta="ngModel" [(ngModel)]="persona.eta" name="eta" required [ngStyle]="{'border':eta.valid?'1px solid blue':'1px solid red'}" value="persona.eta" class="form-control" placeholder="Eta">
+ </div>
+<div class="col">
+      <input type="text" #cell="ngModel" [(ngModel)]="persona.cell" name="cell" required [ngStyle]="{'border':cell.valid?'1px solid blue':'1px solid red'}" value="persona.cell" class="form-control" placeholder="Cell">
+ </div>
+
+    <div *ngIf="isModifica">  <button [disabled]="!myForm.valid" type="button" class="btn btn-outline-primary margine" (click)="modifica( myForm.value )">modifica  <fa-icon [icon] ="edit"></fa-icon></button> </div>
+    <div *ngIf="!isModifica"> <button [disabled]="!myForm.valid" type="button" class="btn btn-outline-primary margine" (click)="aggiungi( myForm.value )">aggiungi  <fa-icon [icon] ="user"></fa-icon> </button> </div>
+
+ </div>
+
+</form>

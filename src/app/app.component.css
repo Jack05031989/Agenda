@@ -1,0 +1,11 @@
+.margine{
+  margin-bottom: 10px;
+}
+.margineSinistro{
+  margin-left: 5px;
+}
+.evidenzia:hover{
+
+  background-color: yellow;
+
+}

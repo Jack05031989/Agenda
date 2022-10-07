@@ -1,0 +1,24 @@
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Cognome</th>
+      <th scope="col">eta</th>
+      <th scope="col"></th>
+      <th scope="col">cellulare</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of persone">
+      <th scope="row">{{persona.nome}}</th>
+      <td>{{persona.cognome}}</td>
+      <td>{{persona.eta}}</td>
+      <td></td>
+      <td>{{persona.cell}}</td>
+      <td><button type="button" class="btn btn-outline-primary" (click)="modificaContatto(persona.id)">vai a modifica  <fa-icon [icon]="edit"></fa-icon></button></td>
+      <td><button type="button" class="btn btn-outline-primary" (click)="eliminaContatto(persona.id)">elimina  <fa-icon [icon]="trash"></fa-icon></button></td>
+      </tr>
+   </tbody>
+</table>
